@@ -5,6 +5,7 @@ import axios from 'axios';
 import CurrentJobs from './CurrentJobs';
 import Ships from './Ships';
 import Jobs from './Jobs';
+import SignUp from './SignUp';
 
 class App extends Component {
   
@@ -28,6 +29,8 @@ class App extends Component {
 
     return (
       <div className="App">
+
+      <SignUp />
 
         <BrowserRouter>
           <div>
