@@ -45,7 +45,7 @@ class SignUp extends Component {
 		}).then(
 			function(response) {
 				console.log(response);
-			}.bind(this)
+			}
 		);
 	}
 

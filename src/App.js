@@ -6,6 +6,7 @@ import CurrentJobs from './CurrentJobs';
 import Ships from './Ships';
 import Jobs from './Jobs';
 import SignUp from './SignUp';
+import SignIn from './SignIn';
 
 class App extends Component {
   
@@ -16,10 +17,12 @@ class App extends Component {
       ships: [],
       currentjobs: []
     }
+    this.signedIn = false;
 
     this.renderJobs = this.renderJobs.bind(this);
     this.renderShips = this.renderShips.bind(this);
     this.renderCurrentJobs = this.renderCurrentJobs.bind(this);
+    this.signInOut = this.signInOut.bind(this);
 
   }
 
@@ -29,8 +32,8 @@ class App extends Component {
 
     return (
       <div className="App">
-
       <SignUp />
+      <SignIn signInOut ={ this.signInOut } />
 
         <BrowserRouter>
           <div>
@@ -87,6 +90,11 @@ class App extends Component {
     return(
         <CurrentJobs list={this.state.currentjobs} ships={this.state.ships} jobs={this.state.jobs} />
       )    
+  }
+  signInOut() {
+    return(
+        this.setState({signedIn: !this.state.signedIn})
+      )
   }
 
 }
