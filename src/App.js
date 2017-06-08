@@ -32,11 +32,11 @@ class App extends Component {
         <BrowserRouter>
           <div>
 
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/ships">Ships</Link></li>
-              <li><Link to="/jobs">Help Wanted</Link></li>
-              <li><Link to="/currentjobs">On the Job</Link></li>
+            <ul className="navigation-container">
+              <li className="navigation-item"><Link to="/">Home</Link></li>
+              <li className="navigation-item"><Link to="/ships">Ships</Link></li>
+              <li className="navigation-item"><Link to="/jobs">Help Wanted</Link></li>
+              <li className="navigation-item"><Link to="/currentjobs">On the Job</Link></li>
             </ul>
 
             <div>

@@ -1,0 +1,39 @@
+.ships-container {
+	padding: 30px;
+	margin-top: 40px;
+	text-align: left;
+	display: flex;
+	justify-content: space-around;
+}
+
+.ship-name {
+	font-size: 30px;
+	font-family: Cursive;
+}
+
+.ship-image {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.ship-info {
+	font-size: 24px;
+}
+
+.ship-info-header {
+	font-size: 30px;
+	font-family: Cursive;
+}
+
+.ship-header-container {
+	width: 50%;
+}
+
+.ship-info-container {
+	text-align: right;
+	padding: 30px;
+	margin-top: 20px;
+	width: 50%;
+}

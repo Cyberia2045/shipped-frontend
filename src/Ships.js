@@ -8,6 +8,7 @@ class Ships extends Component {
 		this.state = {
 			name: "",
 			capacity: "",
+			picture:"",
 			location: ""
 		}
 	}
@@ -17,10 +18,18 @@ class Ships extends Component {
 		let ships = this.ships.map(function(ship, index) {
 
 				return(
-						<div key={index}>
-							<h2>{ship.name}</h2>
-							<p>{ship.location}</p>
-							<p>{ship.capacity}</p>
+						<div className="ships-container" key={index}>
+							<div className="ship-header-container">
+								<h2 className="ship-name">{ship.name}</h2>
+								<img className="ship-image" src={ship.picture} />
+							</div>
+							
+							<div className="ship-info-container">
+								<p className="ship-info-header">Port of Call:</p>
+								<p className="ship-info">{ship.location}</p>
+								<p className="ship-info-header">Max-Capacity:</p>
+								<p className="ship-info">{ship.capacity}</p>
+							</div>
 						</div>
 					)
 
